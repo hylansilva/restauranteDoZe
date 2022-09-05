@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+ /* mechendo com a parte do topo do site */
+.top-wrapper{
+    display: flex;
+    background-color: aliceblue;
+}
+
+.top-wrapper header {
+    margin-left: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-wrapper header p{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.top-wrapper nav{
+  margin:15px;
+}
+
+.top-wrapper nav ul li{
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .top-wrapper nav ul li:hover{
+    font-weight: bold;
+  }
+
+
+/* trabalhando com o main */
+
+main {
+    width: 100vw;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: rgb(196, 196, 196);
+}
+
+.package{
+    
+    height: 200px;
+    width: 50vw;
+    border: 0.2px solid rgb(161, 161, 161);
+}
+
+.package img{
+    padding-top:20px;
+}
+
+/* trabalhando com o footer */
+
+footer{
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* trabalhando com o menu hamburguer */
+.checkbox{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox .trace{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1){
+    top: 6px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2){
+    top: 12px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3){
+    top: 18px;
+    transform: rotate(0);
+}
+
+#toggle{
+    display: none;
+}
+
+
+.item-menu{
+    display: none;
+}
+
+#toggle:checked + .item-menu{
+    display: initial;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 17px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(135deg);
+    top: 17px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante do zé</title>
+    <link rel="stylesheet" href="./assets/css/globalStyle.css">
+</head>
+<body>
+    <div class="top-wrapper">
+        <nav>
+            <!-- <div class="button">
+                <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                    </label>
+            </div> -->
+            <ul>
+                <li class="item-menu">Home</li>
+                <li class="item-menu">Perfil</li>
+                <li class="item-menu">Sair</li>
+            </ul>
+        </nav>
+        <header>
+            <p class="title">Restaurante do Zé</p>
+        </header>
+    </div>
+    <main>
+        <div class="left-wrapper-container">
+            <div class="left-con1 package">
+                <img class="salada" src="./assets/img/salada/salada.png" alt="Desenho de uma salada">
+                <p>Saladas</p>
+            </div>
+            <div class="left-con2 package">
+                <img src="./assets/img/burger/burger.png" alt="Desenho de um hamburguer">
+                <p>Burguers</p>
+            </div>
+            <div class="left-con3 package">
+                <img src="./assets/img/bolos/cake.png" alt="Desenho de um murffin">
+                <p>Bolos</p>
+            </div>
+        </div>
+        <div class="right-wrapper-container">
+            <div class="right-con1 package">
+                <img src="./assets/img/sopas/soup.png" alt="Desenho de uma sopa">
+                <p>Sopas</p>
+            </div>
+            <div class="right-con2 package">
+                <img src="./assets/img/principais/foodPrincipal.png" alt="Desenho de um prato principal">
+                <p>Principais</p>
+            </div>
+            <div class="right-con3 package">
+                <img src="./assets/img/bebidas/drinks.png" alt="Desenho de uma bebida">
+                <p>Bebidas</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1>Jantar</h1>
+            <p>- almoço -</p>
+        </div>
+    </footer>
+    <script>
+        $('#menu-icon').on('click', function() {
+            $('#menu').slideToggle('slow');
+        });
+    </script>
+</body>
+</html>
