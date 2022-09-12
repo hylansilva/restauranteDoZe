@@ -9,20 +9,19 @@
 </head>
 <body>
     <div class="top-wrapper">
-        <nav>
-            <!-- <div class="button">
-                <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                    </label>
-            </div> -->
-            <ul>
-                <li class="item-menu">Home</li>
-                <li class="item-menu">Perfil</li>
-                <li class="item-menu">Sair</li>
-            </ul>
+        <nav id="navbar" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+              <div class="top"></div>
+              <div class="meat"></div>
+              <div class="bottom"></div>
+            </label>
+          
+            <nav class="menu1">
+              <a class="link1" href="">Home</a>
+              <a class="link1" href="">Sobre</a>
+              <a class="link1" href="">Sair</a>
+            </nav>
         </nav>
         <header>
             <p class="title">Restaurante do Zé</p>
@@ -64,10 +63,5 @@
             <p>- almoço -</p>
         </div>
     </footer>
-    <script>
-        $('#menu-icon').on('click', function() {
-            $('#menu').slideToggle('slow');
-        });
-    </script>
-</body>
+    <script src="./assets/js/script.js"></script>
 </html>
